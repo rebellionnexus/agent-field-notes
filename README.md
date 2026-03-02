@@ -19,6 +19,7 @@ Writeups organized by topic. Each one follows the same structure:
 - [Context compaction is memory deletion](notes/context-compaction-is-memory-deletion.md) — Why "longer conversations" is a lie, and how to build a safety net
 
 ### Agent Architecture
+- [The intelligence-hands problem](notes/the-intelligence-hands-problem.md) — Why agents reason brilliantly then execute poorly, and what to do about it
 - [The brain split problem](notes/the-brain-split-problem.md) — What happens when you update files an agent never reads
 - [The model is the personality](notes/the-model-is-the-personality.md) — Why swapping models isn't an optimisation, it's a transplant
 
