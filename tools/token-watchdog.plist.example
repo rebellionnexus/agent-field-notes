@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  macOS LaunchAgent for the token watchdog.
+  Copy to ~/Library/LaunchAgents/ and update the paths.
+
+  Install:  launchctl load ~/Library/LaunchAgents/token-watchdog.plist
+  Uninstall: launchctl unload ~/Library/LaunchAgents/token-watchdog.plist
+  Check:    launchctl list token-watchdog
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>token-watchdog</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- UPDATE THIS PATH to where you put the script -->
+        <string>/path/to/token-watchdog-generic.sh</string>
+    </array>
+
+    <!-- Run every 900 seconds (15 minutes) -->
+    <key>StartInterval</key>
+    <integer>900</integer>
+
+    <!-- Run once immediately on load -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/openclaw/token-watchdog-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/openclaw/token-watchdog-launchd.err.log</string>
+
+    <!-- Ensure openclaw and jq are on the PATH -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+        <key>HOME</key>
+        <!-- UPDATE THIS to your home directory -->
+        <string>/Users/yourusername</string>
+    </dict>
+</dict>
+</plist>
