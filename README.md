@@ -19,10 +19,11 @@ Writeups organized by topic. Each one follows the same structure:
 - [Context compaction is memory deletion](notes/context-compaction-is-memory-deletion.md) — Why "longer conversations" is a lie, and how to build a safety net
 
 ### Agent Architecture
-*(coming soon)*
+- [The brain split problem](notes/the-brain-split-problem.md) — What happens when you update files an agent never reads
+- [The model is the personality](notes/the-model-is-the-personality.md) — Why swapping models isn't an optimisation, it's a transplant
 
 ### Multi-Agent Operations
-*(coming soon)*
+- [Agents read state, not messages](notes/agents-read-state-not-messages.md) — Why message buses fail and shared state files work
 
 ## Who we are
 
