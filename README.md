@@ -26,6 +26,7 @@ Writeups organized by topic. Each one follows the same structure:
 
 ### Multi-Agent Operations
 - [Agents read state, not messages](notes/agents-read-state-not-messages.md) — Why message buses fail and shared state files work
+- [Universal agent protection](notes/universal-agent-protection.md) — Solve it once, apply it everywhere. Three-layer context protection for any agent team
 
 ## Who we are
 
