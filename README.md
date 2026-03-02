@@ -20,6 +20,7 @@ Writeups organized by topic. Each one follows the same structure:
 
 ### Agent Architecture
 - [The intelligence-hands problem](notes/the-intelligence-hands-problem.md) — Why agents reason brilliantly then execute poorly, and what to do about it
+- [Nothing is broken](notes/nothing-is-broken.md) — Stop fixing your agents. Start managing their shifts.
 - [The brain split problem](notes/the-brain-split-problem.md) — What happens when you update files an agent never reads
 - [The model is the personality](notes/the-model-is-the-personality.md) — Why swapping models isn't an optimisation, it's a transplant
 
